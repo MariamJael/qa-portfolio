@@ -20,65 +20,65 @@ My testing approach focuses on real user behavior and system reliability:
 
 ---
 
-## 🧪 Exploratory Test – Brookhaven
+## 🧪 Exploratory Test – Vehicle & Interaction System (Brookhaven-style)
 
 ### 🎯 Objective
-Test core gameplay systems, UI behavior, and player interaction consistency in a Roblox roleplay environment.
+
+Test vehicle interaction, movement transitions, and system behavior under normal and rapid player actions.
 
 ---
 
-### 🧪 Test Scenario – Vehicle + Roleplay Interaction System
+## 🔁 Steps Performed
 
-**Test Type:** Exploratory Testing  
-**Platform:** PC / Mobile mindset  
-
----
-
-### 🔁 Steps Performed
-
-1. Joined a live game session  
-2. Spawned and entered a vehicle  
-3. Performed normal driving behavior  
-4. Tested rapid interactions:
-   - Enter/exit vehicle repeatedly  
-   - Switch between driving and roleplay actions  
-   - Open UI while moving  
-5. Observed multiplayer interactions nearby  
+- Joined a live game session  
+- Spawned and entered a vehicle  
+- Drove normally around the map  
+- Exited the vehicle  
+- Re-entered the vehicle  
+- Used vehicle interactions (horn/claxon and lights)  
+- Switched to a bike and performed jump action  
+- Exited bike and re-entered a vehicle  
+- Resumed driving after multiple rapid transitions between systems  
 
 ---
 
-### 📊 Expected Behavior
+## 📊 Expected Behavior
 
-- Smooth vehicle entry and exit  
-- No physics or animation glitches  
-- UI remains responsive during gameplay  
-- Consistent behavior across actions  
-- Stable multiplayer synchronization  
-
----
-
-### ⚠️ Observations / Risk Areas
-
-- Potential delay when switching rapidly between actions  
-- UI responsiveness may degrade during fast interactions  
-- Animation or state transitions may conflict under spam input  
-- Multiplayer sync may vary during fast interaction sequences  
+- Smooth transitions between vehicles and movement states  
+- Vehicle controls (horn, lights) respond consistently  
+- No delay or loss of input when switching between vehicles  
+- Character animations remain stable across actions  
+- No physics or state inconsistencies after repeated interactions  
 
 ---
 
-## 🎥 Evidence 
+## ⚠️ Observations / Risk Areas
+
+- Potential inconsistency when switching rapidly between different vehicle types (car → bike → car)  
+- Input timing sensitivity when performing multiple actions in sequence  
+- Possible UI or control delay after repeated enter/exit actions  
+- Risk of minor animation or state desynchronization during fast transitions  
+
+---
+
+## 🎥 Evidence
+
+
+
 
 ---
 
 ## 🧠 QA Thinking Summary
 
-This test was designed using an exploratory testing approach:
+This test followed an exploratory testing approach:
 
-- Start with normal user behavior  
-- Introduce edge cases (rapid input, unusual sequences)  
-- Combine systems (UI + gameplay interactions)  
-- Observe system stability under stress conditions  
-- Evaluate impact from a player experience perspective  
+- Started with normal gameplay (driving a vehicle)  
+- Introduced system transitions (car ↔ bike)  
+- Tested interaction features (horn, lights) during gameplay  
+- Applied rapid state switching (enter/exit multiple times)  
+- Observed system stability under real player-like behavior  
+
+The goal was to evaluate how well the system handles continuous transitions between gameplay states and whether any inconsistencies appear under realistic user behavior.
 
 ---
 
